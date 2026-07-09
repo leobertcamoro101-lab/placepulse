@@ -4,8 +4,8 @@ A MERN stack application.
 
 ## Frontend
 - React.js
-- Tailwind CSS
-- Deployed on Netlify/Vercel
+- CSS
+- Deployed on Vercel
 
 ## Backend
 - Node.js + Express
