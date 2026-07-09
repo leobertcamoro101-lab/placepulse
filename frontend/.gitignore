@@ -1,0 +1,10 @@
+node_modules
+.env
+.env.production
+.env.local
+.env.development
+build
+.firebase
+.firebaserc
+.agents
+skills-lock.json
