@@ -18,11 +18,7 @@ const app = express();
 app.use(bodyParser.json()); 
 
 app.use('/uploads/images', express.static(path.join('uploads', 'images')));
-// added because of combine deployment with React
-// app.use(express.static(path.join('public')));
 
-// you can omit becuase of combine deployment with React
-// this we don't need this anymore or not to omit this no problem
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader(
@@ -36,12 +32,6 @@ app.use((req, res, next) => {
 app.use("/api/places", placesRoutes); // => /api/places
 app.use("/api/users", usersRoutes); // => /api/users
 
-// added because of combine deployment with React
-// app.use((req, res, next) => {
-//   res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
-// });
-
-// remove because combine deployment with React
 // error handling middleware for unsupported routes
 app.use((req, res, next) => {
   const error = new HttpError("Could not find this route.", 404);
