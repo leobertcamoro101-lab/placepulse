@@ -82,7 +82,4 @@ mongoose
     console.log(err);
   });
 
-// mongodb+srv://leobertcamoro10_db_user:WwALwPdZcsK4Adb2@cluster0.accdk79.mongodb.net/?appName=Cluster0
-// mongodb+srv://LeoDev:LAWErUwAJCCVroyd@cluster0.accdk79.mongodb.net/places?appName=Cluster0
-// mongodb://localhost:27017/
 
